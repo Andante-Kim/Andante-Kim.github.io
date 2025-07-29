@@ -1,0 +1,55 @@
+/** font **/
+@font-face {
+    font-family: 'PFStardustS';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/PFStardustS.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #0d0d0d;
+}
+
+/** header stiyle **/
+.header {
+    background-image: url(https://t4.ftcdn.net/jpg/03/73/50/11/360_F_373501182_AW73b2wvfm9wBuar0JYwKBeF8NAUHDOH.jpg);
+    height: 80px;
+    background-position: center center;
+}
+
+.header-main {
+    color: white;
+     font-size: 15px;
+     line-height: 50px;
+     margin-left: 200px;
+     margin-right:20px;
+     position: relative;
+     top: 15%;
+}
+
+.header-link {
+    color:white;
+    font-size: 13px;
+    line-height: 50px;
+    margin:10px;
+    position: relative;
+    top:15%;
+}
+
+/** intro **/
+.intro {
+    margin: 40px auto;
+    padding: 20px 30px 40px 30px;
+    background-color: white;
+    overflow: auto;
+    width: 75%;
+    border-radius: 10px;
+    align-self: center;
+    text-align: center;
+}
