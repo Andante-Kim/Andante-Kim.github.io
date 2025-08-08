@@ -140,6 +140,7 @@ body {
   margin-top: 60px;
   font-size: 86px;
   font-family: 'YClover-Bold';
+  flex-wrap: nowrap;
 }
 
 .intro-subtitle {
