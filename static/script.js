@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactButtons = document.querySelectorAll('.contact-btn');
     contactButtons.forEach(btn => {
         btn.addEventListener('click', function(e) {
-            e.preventDefault();
+            //e.preventDefault();
             const platform = this.textContent.trim();
             console.log('Contact via:', platform);
         });
