@@ -159,8 +159,10 @@ section h2 {
 }
 
 .profile-circle {
-    width: 73px;
-    height: 73px;
+    min-width: 73px;
+    min-height: 73px;
+    max-width: 80px;
+    max-width: 80px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--pastel-pink), var(--light-pink));
     display: flex;
