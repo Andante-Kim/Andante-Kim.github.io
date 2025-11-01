@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiDAR Point Cloud Segmentation - Project Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/project-detail.css">
+</head>
+<body>
+    <div class="background-hearts"></div>
+    
+    <div class="window-container">
+        <div class="window-header">
+            <div class="search-bar">
+                <span class="search-icon">🎯</span>
+                <span class="search-text">LiDAR Point Cloud Segmentation</span>
+            </div>
+            <div class="window-controls">
+                <a href="index.html" class="back-btn">← Back</a>
+                <span class="control-btn close">×</span>
+            </div>
+        </div>
+
+        <div class="window-content">
+            <section class="project-hero">
+                <div class="project-title-section">
+                    <div class="project-icon-large">🎯</div>
+                    <div>
+                        <h1>LiDAR Point Cloud Segmentation</h1>
+                        <p class="project-subtitle">Semantic segmentation for autonomous navigation</p>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PCL</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">PointNet++</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>🎯 Project Overview</h2>
+                <div class="info-box">
+                    <p>Developed an advanced semantic segmentation system for LiDAR point clouds using the PointNet++ architecture, enabling autonomous vehicles to understand and classify their surroundings in real-time. The system processes raw 3D point cloud data and classifies each point into semantic categories such as road, vehicle, pedestrian, building, and vegetation.</p>
+                    <p>This project addresses the critical challenge of scene understanding in autonomous driving, where accurate segmentation is essential for safe navigation and decision-making.</p>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>🔧 Technical Implementation</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>🏗️ Network Architecture</h3>
+                        <p>Implemented PointNet++ with hierarchical feature learning, incorporating set abstraction layers and feature propagation for multi-scale point cloud understanding.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📊 Data Augmentation</h3>
+                        <p>Created robust training pipeline with random rotation, scaling, jittering, and dropout to improve model generalization across diverse driving scenarios and weather conditions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>⚙️ Point Cloud Processing</h3>
+                        <p>Utilized Point Cloud Library (PCL) for efficient preprocessing including voxel downsampling, normal estimation, and outlier removal to optimize inference speed.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🎓 Transfer Learning</h3>
+                        <p>Leveraged pre-trained models on large-scale datasets (SemanticKITTI, nuScenes) and fine-tuned on domain-specific data for improved accuracy.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>💡 Key Challenges & Solutions</h2>
+                <div class="challenge-list">
+                    <div class="challenge-item">
+                        <div class="challenge-icon">⚠️</div>
+                        <div class="challenge-content">
+                            <h3>Challenge: Class Imbalance</h3>
+                            <p><strong>Solution:</strong> Implemented focal loss and weighted sampling strategies to address underrepresented classes like pedestrians and cyclists, improving minority class F1-score by 18%.</p>
+                        </div>
+                    </div>
+                    <div class="challenge-item">
+                        <div class="challenge-icon">⚠️</div>
+                        <div class="challenge-content">
+                            <h3>Challenge: Real-time Performance</h3>
+                            <p><strong>Solution:</strong> Optimized model with TensorRT quantization and spatial pruning, achieving 20 Hz inference on embedded automotive platforms while maintaining accuracy.</p>
+                        </div>
+                    </div>
+                    <div class="challenge-item">
+                        <div class="challenge-icon">⚠️</div>
+                        <div class="challenge-content">
+                            <h3>Challenge: Sparse Point Clouds</h3>
+                            <p><strong>Solution:</strong> Designed specialized loss functions accounting for point density variations and incorporated attention mechanisms to focus on critical sparse regions.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>📊 Results & Impact</h2>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">91.3%</div>
+                        <p>Mean IoU on test set</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">20 Hz</div>
+                        <p>Inference frequency</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">12</div>
+                        <p>Semantic classes</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">100K+</div>
+                        <p>Points per frame</p>
+                    </div>
+                </div>
+                <div class="info-box" style="margin-top: 20px;">
+                    <p><strong>Impact:</strong> The segmentation system was integrated into the perception stack of autonomous shuttles operating in urban environments. It achieved 91.3% mean IoU on the validation set and demonstrated robust performance across diverse weather conditions including rain, fog, and nighttime scenarios.</p>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>🔮 Future Enhancements</h2>
+                <div class="info-box">
+                    <ul>
+                        <li>Panoptic segmentation for instance-level object understanding</li>
+                        <li>Temporal consistency through recurrent architectures (LSTM/GRU)</li>
+                        <li>Multi-modal fusion with camera images for improved accuracy</li>
+                        <li>Active learning pipeline for continuous model improvement</li>
+                        <li>Uncertainty estimation for safety-critical decision making</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="window-footer">
+            <a href="index.html" class="footer-link">← Back to Portfolio</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

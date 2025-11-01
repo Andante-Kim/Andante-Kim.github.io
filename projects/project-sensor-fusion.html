@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Fusion Framework - Project Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/project-detail.css">
+</head>
+<body>
+    <div class="background-hearts"></div>
+    
+    <div class="window-container">
+        <div class="window-header">
+            <div class="search-bar">
+                <span class="search-icon">🌐</span>
+                <span class="search-text">Sensor Fusion Framework</span>
+            </div>
+            <div class="window-controls">
+                <a href="index.html" class="back-btn">← Back</a>
+                <span class="control-btn close">×</span>
+            </div>
+        </div>
+
+        <div class="window-content">
+            <section class="project-hero">
+                <div class="project-title-section">
+                    <div class="project-icon-large">🌐</div>
+                    <div>
+                        <h1>Sensor Fusion Framework</h1>
+                        <p class="project-subtitle">Modular multi-sensor perception system</p>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">ROS2</span>
+                            <span class="tag">Kalman Filter</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>🎯 Project Overview</h2>
+                <div class="info-box">
+                    <p>Designed and implemented a modular sensor fusion framework that intelligently combines data from cameras, LiDAR, and radar sensors to create a unified, robust perception of the environment. The framework uses Extended Kalman Filtering (EKF) and particle filtering techniques to fuse heterogeneous sensor data while accounting for their different characteristics and uncertainties.</p>
+                    <p>This framework serves as the foundation for autonomous vehicle perception stacks, providing reliable object detection, tracking, and state estimation even when individual sensors fail or provide noisy measurements.</p>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>🔧 Technical Implementation</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>🔄 Multi-Modal Fusion</h3>
+                        <p>Developed fusion algorithms combining camera (rich appearance), LiDAR (accurate depth), and radar (velocity measurements) using weighted covariance intersection methods.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📐 State Estimation</h3>
+                        <p>Implemented Extended Kalman Filter with constant velocity and constant turn rate motion models, adaptively selecting based on object dynamics and trajectory curvature.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🏗️ Modular Architecture</h3>
+                        <p>Built ROS2-based pipeline with plugin system allowing easy addition of new sensors and fusion strategies without modifying core framework code.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>⏱️ Temporal Alignment</h3>
+                        <p>Created sophisticated timestamp synchronization system handling sensor latency variations and ensuring temporally consistent fusion across all modalities.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>💡 Key Challenges & Solutions</h2>
+                <div class="challenge-list">
+                    <div class="challenge-item">
+                        <div class="challenge-icon">⚠️</div>
+                        <div class="challenge-content">
+                            <h3>Challenge: Sensor Calibration</h3>
+                            <p><strong>Solution:</strong> Developed automated extrinsic calibration procedure using target-based and targetless methods, achieving sub-centimeter alignment accuracy between camera, LiDAR, and radar coordinate frames.</p>
+                        </div>
+                    </div>
+                    <div class="challenge-item">
+                        <div class="challenge-icon">⚠️</div>
+                        <div class="challenge-content">
+                            <h3>Challenge: Conflicting Measurements</h3>
+                            <p><strong>Solution:</strong> Implemented probabilistic data association with gating mechanisms and Mahalanobis distance thresholding to reject outliers and resolve measurement conflicts intelligently.</p>
+                        </div>
+                    </div>
+                    <div class="challenge-item">
+                        <div class="challenge-icon">⚠️</div>
+                        <div class="challenge-content">
+                            <h3>Challenge: Sensor Degradation</h3>
+                            <p><strong>Solution:</strong> Designed health monitoring system detecting sensor failures and gracefully degrading to remaining modalities with automatic uncertainty adjustment in the fusion algorithm.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>📊 Results & Impact</h2>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">3x</div>
+                        <p>Detection range improvement</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">45%</div>
+                        <p>False positive reduction</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">10cm</div>
+                        <p>Position accuracy (RMSE)</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">99.9%</div>
+                        <p>System availability</p>
+                    </div>
+                </div>
+                <div class="info-box" style="margin-top: 20px;">
+                    <p><strong>Impact:</strong> The sensor fusion framework became the core perception component for a fleet of autonomous shuttles. It demonstrated superior performance in challenging conditions including heavy rain, fog, and direct sunlight where single-sensor systems failed. The framework improved object detection range by 3x and reduced false positives by 45% compared to camera-only baselines.</p>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>🔮 Future Enhancements</h2>
+                <div class="info-box">
+                    <ul>
+                        <li>Deep learning-based learned fusion replacing hand-crafted algorithms</li>
+                        <li>Integration of additional sensors (thermal cameras, ultrasonic, IMU)</li>
+                        <li>Distributed fusion architecture for multi-vehicle coordination</li>
+                        <li>Real-time uncertainty quantification for safety-critical applications</li>
+                        <li>Adaptive fusion weights based on environmental conditions</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="window-footer">
+            <a href="index.html" class="footer-link">← Back to Portfolio</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
