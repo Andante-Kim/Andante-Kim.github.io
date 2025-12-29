@@ -35,6 +35,16 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById(targetId).classList.add('active');
         });
     });
+
+    updateProgressBar();
+    window.addEventListener('scroll', updateProgressBar);
+
+    function updateProgressBar() {
+        const winScroll = window.scrollY;
+        const height = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+        document.documentElement.style.setProperty('--scroll-width', Math.min(scrolled, 100) + '%');
+    }
 });
 
 
