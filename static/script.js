@@ -1,26 +1,40 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const controlButtons = document.querySelectorAll('.control-btn');
-    controlButtons.forEach(btn => {
-        btn.addEventListener('click', function() {
-            if (this.classList.contains('close')) {
-                alert('👋 Thanks for visiting my portfolio!');
-            } else if (this.classList.contains('minimize')) {
-                document.querySelector('.window-container').style.transform = 'scale(0.95)';
-                setTimeout(() => {
-                    document.querySelector('.window-container').style.transform = 'scale(1)';
-                }, 200);
-            } else if (this.classList.contains('maximize')) {
-                document.querySelector('.window-container').classList.toggle('maximized');
-            }
-        });
+document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('topButton');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            btn.classList.add('visible');
+        } else {
+            btn.classList.remove('visible');
+        }
+    });
+    
+    btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    const contactButtons = document.querySelectorAll('.contact-btn');
-    contactButtons.forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            //e.preventDefault();
-            const platform = this.textContent.trim();
-            console.log('Contact via:', platform);
+    // 1. 탭 전환 기능
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('.content-section');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault(); // 링크 클릭 시 페이지 이동 방지
+
+            // 1-1. 모든 메뉴의 active 클래스 제거
+            navLinks.forEach(nav => nav.classList.remove('active'));
+            
+            // 1-2. 클릭한 메뉴에 active 클래스 추가
+            link.classList.add('active');
+
+            // 1-3. 모든 섹션 숨기기
+            sections.forEach(section => section.classList.remove('active'));
+
+            // 1-4. 클릭한 메뉴의 data-target에 해당하는 섹션만 보여주기
+            const targetId = link.getAttribute('data-target');
+            document.getElementById(targetId).classList.add('active');
         });
     });
 });
+
+

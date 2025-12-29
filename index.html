@@ -1,194 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andante</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./static/style.css">
-</head>
-<body>
-    <div class="background-hearts"></div>
-    
-    <div class="window-container">
-        <div class="window-header">
-            <div class="search-bar">
-                <span class="search-icon">🔍</span>
-                <span class="search-text">Who is "Andante"?</span>
-            </div>
-            <div class="window-controls">
-                <span class="control-btn minimize">−</span>
-                <span class="control-btn maximize">□</span>
-                <span class="control-btn close">×</span>
-            </div>
+<html lang="en" style="--scroll-width: 0%;">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-sclae=5">
+        <title>🪼 Andante</title>
+        <link rel="canonical" href="https://andante-kim.github.io">
+        <meta name="sankalp" content="look-for-the-bear-necessites">
+        <!--Primary Meta Tags-->
+        <meta name="title" content="Andante">
+        <link rel="stylesheet" href="./static/style.css">
+    </head>
+    <body class="home">
+        <div class="progress-container">
+            <div class="progress-bar"></div>
         </div>
-
-        <div class="window-content">
-            <section class="intro-section">
-                <h2>▶︎ Intro</h2>
-                <div class="info-box">
-                    <div class="intro-header">
-                        <div class="profile-circle">
-                            <img src="./static/img/profile.jpeg" alt="Profile Picture" class="profile-image">
-                        </div>
-                        <div class="intro-text">
-                            <h1>Andante Kim</h1>
-                            <p class="tagline">Perception AI Engineer who develops technology for human life and happiness.</p>
-                        </div>
-                    </div>
-                    <div class="contact-links">
-                        <a href="mailto:andante.mjkim@gmail.com" target="_blank" class="contact-btn">📧 Email</a>
-                        <a href="https://www.linkedin.com/in/minjeong-kim-991645318/" target="_blank" class="contact-btn">💼 LinkedIn</a>
-                        <a href="https://github.com/Andante-Kim" target="_blank" class="contact-btn">🐈‍⬛ GitHub</a>
-                        <a href="https://andante-kim.tistory.com/" target="_blank" class="contact-btn">📝 Blog</a>
-                    </div>
-                </div>
+        <header>
+            <a class="title" href="/">
+                <h1>Minjeong Kim</h1>
+            </a>
+            <nav>
+                <a href="#" class="nav-link active" data-target="home">Home</a>
+                <a href="#" class="nav-link" data-target="about">About</a>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="content-section active">
+                <p>Hello everyone, I'm Minjeong kim.</p>
+                <p> I currently study at Duksung Women's University. 
+                    I'm fascinated by computer-vision and self-driving vehicle. 
+                    So now I'm studying to become a AI engineer specializing in computer vision and perception systems for autonomous vehicles and robotics.
+                </p>
+                <p>Outside of work, I'm interested in reading books and expressing myself through writing — whether it's blog posts, novels, or personal journals. </p>
+                <p>I wanna be a person who research science and technology for human life and happiness.</p>
             </section>
 
-            <section class="about-section">
-                <h2>▶︎ About Me</h2>
-                <div class="info-box">
-                    <p class="about-intro">
-                        Hello everyone, I'm <span style="color: #FFB6D9; font-weight: bold;">Andante Kim</span>, a CS student in Seoul, South Korea.
-                        I currently study at Duksung Women's University.
-                        I'm fascinated by computer-vision and self-driving vehicle. So now I'm studying to become a passionate AI engineer specializing in computer vision and perception systems for autonomous vehicles and robotics.
-                        Outside of work, I'm interested in reading books and expressing myself through writing — whether it's blog posts, novels, or personal journals.
-                        
-                    </p>
-                    
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>🧠 Core Skills</h3>
-                            <ul>
-                                <li>Computer Vision & Image Processing</li>
-                                <li>Deep Learning (CNN, Transformers)</li>
-                                <li>3D Object Detection & Tracking</li>
-                                <li>Sensor Fusion (Camera, LiDAR, Radar)</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h3>🛠️ Tools & Frameworks</h3>
-                            <ul>
-                                <li>PyTorch, TensorFlow, OpenCV</li>
-                                <li>ROS, PCL, CUDA</li>
-                                <li>Python, C++, MATLAB</li>
-                                <li>Docker, Git, Linux</li>
-                            </ul>
-                        </div>
+            <section id="about" class="content-section">
+                <p>Last Updated: Dec, 2025</p>
+
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <p>Email: <a href="mailto:andante.mjkim@gmail.com">Gmail</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/minjeong-kim-991645318/">Minjeong Kim</a></p>
+                    <p>Github: <a href="https://github.com/Andante-Kim">@Andante-Kim</a></p>
+                    <p>Dev-blog: <a href="https://andante-kim.tistory.com">Andante Tech</a></p>
+                </div>
+                <br>
+                <div class="education">
+                    <h2>Education</h2>
+                    <div class="university">
+                        <p>Duksung Women's University | third grade (Mar.2023 - Now)</p>
+                        <p style="color: rgba(0,0,0,0.5);">→ B.S in Digital Software Engineering | GPA: 3.94/4.5</p>
                     </div>
                 </div>
-            </section>
+                <br>
 
-            <section class="experience-section">
-                <h2>▶︎ Experience</h2>
-                <div class="timeline">
-
-                    <div class="experience-item">
-                        <div class="exp-icon">🐻</div>
-                        <div class="exp-content">
-                            <h3>Tobigs 23rd</h3>
-                            <p class="company">AI and Data Analytics Society</p>
-                            <p class="date">2025.1 - now</p>
-                            <ul>
-                                <li>Completed a curriculum covering foundational concepts in Data Analysis, ML, and DL</li>
-                                <li>Developed specialized skills via advanced seminars (e.g., CV, Generative Models)</li>
-                                <li>Fostered practical application through internal data-thons, academic study groups, and networking with industry professionals and alumni</li>
-                            </ul>
-                        </div>
+                <div class="projects">
+                    <h2>Projects</h2>
+                    <div class="project-description">
+                        <h3>Data-Driven Policy Proposal: Improving shelter dog adoption rates</h3>
+                        <p style="color: rgba(0,0,0,0.5);">Team Member | May.2025 - July.2025</p>
+                        <ul>
+                            <li>
+                                <p>My role: Hyperparameter tuning using Optuna</p>
+                            </li>
+                            <li>
+                                <p>Developed a TabNet-based predictive model(F1-score 0.85)</p>
+                            </li>
+                            <li>
+                                <p>Using a merged dataset of 30k domestic/international records</p>
+                            </li>
+                            <li>
+                                <p>Identifying key adoption factors to propose data-driven shelter policies.</p>
+                            </li>
+                        </ul>
+                        <p><a href="https://drive.google.com/drive/folders/144B_wdzoMqvqI9d7SedWvPn-8K_WkRmQ">Related files</a></p>
+                        <p><a href="https://storymaps.arcgis.com/stories/39c467a25d4346e787291b704d0553ec">Demo</a></p>
                     </div>
 
-                    <div class="experience-item">
-                        <div class="exp-icon">🎓</div>
-                        <div class="exp-content">
-                            <h3>B.S. Computer Science</h3>
-                            <p class="company">Duksung Women's University</p>
-                            <p class="date">2023 - now</p>
-                            <ul>
-                                <li>Focus: Computer Vision & Machine Learning</li>
-                                <!--<li>Thesis: Advanced Object Detection in Autonomous Driving</li>-->
-                            </ul>
-                        </div>
+                    <div class="project-description">
+                        <h3>NextBridge: A web solution to combat regional extinction in Korea</h3>
+                        <p style="color: rgba(0,0,0,0.5);">Team Leader, Presenter | Nov. 2024</p>
+                        <ul>
+                            <li>
+                                <p>My role: Team leader, backend, data crawling, managing database</p>
+                            </li>
+                            <li>
+                                <p>Awarded 2nd place in the Duksung Women's University Hackathon.</p>
+                            </li>
+                            <li>
+                                <p>Designed and developed a platform featuring job matching, community forums, and transparent workplace reviews.</p>
+                            </li>
+                            <li>
+                                <p>Successfully implemented a region/industry-based filtering system.</p>
+                            </li>
+                        </ul>
+                        <p><a href="https://github.com/Andante-Kim/NextBridge_Hackathon">Github - code</a></p>
+                        <p><a href="https://drive.google.com/drive/folders/1PXQ-dbAHxef4IH49Z_tOSnZCQPnbQRIf">Presentation[pdf]</a></p>
                     </div>
                 </div>
-            </section>
+                <br>
 
-            <section class="projects-section">
-                <h2>▶︎ Projects</h2>
-                <div class="projects-grid">
-                    <a href="#" class="project-card">
-                        <div class="project-header">
-                            <span class="project-icon">🚘</span>
-                            <h3>Ongoing...!</h3>
-                        </div>
-                        <p>Please wait for me. I'll make a good project</p>
-                        <div class="tech-tags">
-                            
-                        </div>
-                    </a>
-                    <!--
-                    <a href="./projects/project-3d-reconstruction.html" class="project-card">
-                        <div class="project-header">
-                            <span class="project-icon">📷</span>
-                            <h3>Multi-Camera 3D Reconstruction</h3>
-                        </div>
-                        <p>Real-time 3D scene reconstruction from multiple camera views using deep learning and stereo vision techniques.</p>
-                        <div class="tech-tags">
-                            <span class="tag">PyTorch</span>
-                            <span class="tag">OpenCV</span>
-                            <span class="tag">CUDA</span>
-                        </div>
-                    </a>
-
-                    <a href="./projects/project-lidar-segmentation.html" class="project-card">
-                        <div class="project-header">
-                            <span class="project-icon">🎯</span>
-                            <h3>LiDAR Point Cloud Segmentation</h3>
-                        </div>
-                        <p>Semantic segmentation of LiDAR point clouds for autonomous navigation using PointNet++ architecture.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">PCL</span>
-                            <span class="tag">TensorFlow</span>
-                        </div>
-                    </a>
-
-                    <a href="./projects/project-object-tracking.html" class="project-card">
-                        <div class="project-header">
-                            <span class="project-icon">🔍</span>
-                            <h3>Real-Time Object Tracking</h3>
-                        </div>
-                        <p>High-performance multi-object tracking system achieving 60 FPS on embedded hardware using SORT algorithm.</p>
-                        <div class="tech-tags">
-                            <span class="tag">C++</span>
-                            <span class="tag">ROS</span>
-                            <span class="tag">YOLOv8</span>
-                        </div>
-                    </a>
-
-                    <a href="./projects/project-sensor-fusion.html" class="project-card">
-                        <div class="project-header">
-                            <span class="project-icon">🌐</span>
-                            <h3>Sensor Fusion Framework</h3>
-                        </div>
-                        <p>Modular framework for fusing camera, LiDAR, and radar data with Kalman filtering for robust perception.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">C++</span>
-                            <span class="tag">ROS2</span>
-                        </div>
-                    </a>
-                    -->
+                <div class="awards">
+                    <h2>Awards</h2>
+                    <p>2024.11 <strong>2rd place</strong>, Duksung W. Univ Digital Software Engineering Hachaton | <em>Duksung W. Univ.</em></p>
                 </div>
+                <br>
+
+                <div class="experience">
+                    <h2>Extracurricular Activity</h2>
+                    <div class="experience-description">
+                        <h3>Student Association Big Data/AI Club TOBIG'S</h3>
+                        <p style="color: rgba(0,0,0,0.5);">Core Member | Jan.2025 - Now</p>
+                        <ul>
+                            <li>
+                                <p>Working as a club member in <strong>data analysis</strong> and <strong>computer vision</strong></p>
+                            </li>
+                            <li>
+                                <p>Learned data visualization, data science and 3d reconstruction</p>
+                            </li>
+                            <li>
+                                <p>As the core member at the paper study group for CV, learned about the latest technology about Vision and <a href="https://andante-kim.tistory.com/90">teached eace other own paper review</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <p>Python, C, C++, HTML5, CSS, SQL</p>
+                    <p>pandas, numpy, matplotlib, keras, plotly, opencv, pytorch, scikit-learn, tensorflow</p>
+                    <p>anaconda, git, mySQL, SQLite</p>
+                </div>
+                <br>
+
+                <div class="certification">
+                    <h2>Certification</h2>
+                    <ul>
+                        <li>
+                            <p>2024.11 - <strong>ADsP</strong></p>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+
             </section>
-        </div>
-
-        <div class="window-footer">
-            <p>Built and designed by Andante(min-jeong) Kim. All rights reserved. © </p>
-        </div>
-    </div>
-
-    <script src="./static/script.js"></script>
-</body>
+        </main>
+        <footer>
+            <span id="footer-directive">
+                <!--Add to header-->
+                <p>
+                    <button id="topButton" class="visible" aria-label="Back to top">🔝</button>
+                </p>
+            </span>
+            <span>@Andante-kim</span>
+        </footer>
+        <script src="./static/script.js"></script>
+    </body>
 </html>
