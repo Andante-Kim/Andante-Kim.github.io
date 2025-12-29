@@ -3,7 +3,7 @@
     --font-main: 'Hiragino Mincho Pro', 'Noto Serif JP', 'Sawarabi Mincho', serif;
     --font-secondary: Inter, system-ui, sans-serif;
     --font-scale: 1.15em;
-    --background-color: #fefefe;
+    --background-color: #f8f6f5;
     --heading-color: #1a1a1a;
     --text-color: #2d2d2d;
     --link-color: #aec7e0;
@@ -147,16 +147,11 @@ a:hover {
 }
 
 
-.project-description {
-    border-radius: 10px;
-    border: 1px solid transparent; 
-    background: #f9f8f7; 
-    padding-inline-start: 20px; 
-    padding-top: 12px; 
-    padding-bottom: 12px; 
-    padding-inline-end: 20px;
-    margin-bottom: 20px;
+.project-description, .experience-description {
+    border-bottom: 1px dashed rgba(0,0,0,0.2);
+    margin-bottom: 2em;
 }
+
     
 
 .project-description h3{
